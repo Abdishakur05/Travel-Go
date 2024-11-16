@@ -41,6 +41,29 @@ p.card-text{
 }
 
 
+
+
+/*Service*/
+div .main-txt{
+    text-align: center;
+
+}
+
+.service .card{
+    border-radius: 5px;
+    border: none;
+    height: 300px;
+    width: 300px;
+}
+
+.serivce .card img{
+    border: 5px;
+}
+
+.serive .card{
+ padding: 0;
+}
+
 /*Main End*/
 
 /*Mobile small tablets*/
