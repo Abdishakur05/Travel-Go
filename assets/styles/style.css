@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&display=swap');
 
 
+/*Nav*/
+
+a.nav-link:hover,a.nav-link.active:hover{
+background-color: rgb(54, 181, 190);
+color: white;
+}
+
 /*Main*/
 main{
     background-color: rgb(255, 255, 255);
@@ -37,7 +44,7 @@ p.card-text{
 /*Main End*/
 
 /*Mobile small tablets*/
-@media screen and (max-width:762px) {
+@media screen and (max-width:766px) {
     
     
     #clms{
@@ -73,15 +80,33 @@ p.card-text{
         padding: 5px;
     }
 
-    #inputEmail4,
-    #inputPassword4,
-    #inputselect,
-    #travel-date,
-    #classform{
+    form{
+        width: 100%;
         display: flex;
-        align-content: center;
+    flex-direction: column;
     }
     
+    #classform{
+        width: 100%;           /* Ensure input fields take up the full width of their container */
+        margin: 0 auto;        /* Center the input fields */
+          
+    }
+}
+
+
+@media screen and (min-width: 1121px) and (max-width: 1200px) {
+    #imgbook{
+        width: 95%;
+    }
+
+    p.card-text{
+        width:100%;
+    }
+
+    form{
+        align-items: center; /* Center all elements horizontally */
+        text-align: center;  /* Align text for labels and inputs */
+    }
 }
 
 /*Tablets small laptops*/
@@ -89,13 +114,7 @@ p.card-text{
 {
     
 
-    #inputEmail4,
-    #inputPassword4,
-    #inputselect,
-    #travel-date,
-    #classform{
-        width: 300px;
-    }
+    
 
     #imgbook{
         width: 100%;
