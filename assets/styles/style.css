@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&display=swap');
 
 
+/*Main*/
+main{
+    background-color: rgb(255, 255, 255);
+}
 
 .img1{
     background: url("/assets/image/1_kfoZJqoU5IDWz-u7ZclDtQ.jpg") no-repeat center center/cover;
     min-height: 500px;
     width: 100%;
     position: relative;
+    margin-bottom: 60px;
 }
 
 #imgtext{
@@ -20,6 +25,15 @@
 }
 
 
+
+div .card-body{
+    width: 300px;
+    text-align: center;
+}
+
+/*Main End*/
+
+/*Mobile small tablets*/
 @media screen and (max-width:762px) {
     
     
@@ -41,24 +55,42 @@
         display: flex;
 
     }
+
+    div .card-body{
+        padding-left: 90px;
+        width: 100px;
+    }
+    
+    form{
+        padding: 0;
+        
+    }
     
 }
 
-@media screen and (max-width:992px) 
+/*Tablets small laptops*/
+@media screen and (max-width:1120px) 
 {
-    form,#imgbook {
-        display: flex;
-        flex-direction: column; /* Stack items vertically by default */
-        align-items: center;    /* Center items horizontally */
-        justify-content: center; /* Center items vertically within the container */
-        text-align: center;     /* Center text inside the form and image sections */
-        
+    
+
+    #inputEmail4,
+    #inputPassword4,
+    #inputselect,
+    #travel-date,
+    #classform{
+        width: 300px;
     }
 
     #imgbook{
         width: 100%;
     }
 
-    
+    div .card-body{
+        width: 200px;
+    }
+
+    div .card-width{
+        width: 16rem;
+    }
     
 }
