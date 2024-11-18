@@ -103,10 +103,17 @@ div.card,
 
 /*footer*/
 
-footer{
-    padding: 0;
-    margin: 0;
-    background-color: brown;
+section ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+section li{
+    list-style-type: none;
+    padding-right: 20px;
+    font-size: 200%;
+   
 }
 
 /*Mobile small tablets*/
